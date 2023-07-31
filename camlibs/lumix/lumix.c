@@ -1636,7 +1636,7 @@ camera_capture (Camera *camera, CameraCaptureType type, CameraFilePath *path, GP
 		sleep(3);
 	}
 	stopCapture(camera);
-
+	switchToPlayMode(camera);
 	tries = 10;
 	do {
 		ret = NumberPix(camera);
